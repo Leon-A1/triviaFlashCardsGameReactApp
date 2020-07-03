@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import FlashcardList from "./FlashcardList";
 import "./App.css";
-
 import axios from "axios";
 import spinner from "./spinner.gif";
 
@@ -18,8 +17,6 @@ function App() {
       setCategories(res.data.trivia_categories);
     });
   }, []);
-
-  // useEffect(() => {}, [CardsLoading]);
 
   function decodeString(str) {
     const textArea = document.createElement("textarea");
